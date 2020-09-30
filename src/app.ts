@@ -19,7 +19,7 @@ const mainCanvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
 const engine = new ThinEngine(mainCanvas, true, {
     antialias: true,
     preserveDrawingBuffer: false,
-    disableWebGL2Support: true,
+    disableWebGL2Support: false,
 }, true);
 // prevents dealing with effect readyness for POC Code only.
 engine.getCaps().parallelShaderCompile = undefined;
