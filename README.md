@@ -1,4 +1,4 @@
-# Babylon.js Video Processing DEMO
+# Babylon.js ThinEngine Instances DEMO
 
 [![Twitter](https://img.shields.io/twitter/follow/babylonjs.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=babylonjs)
 
@@ -15,7 +15,3 @@ npm start
 ```
 
 For VSCode users, if you have installed the Chrome Debugging extension, you can start debugging within VSCode by using the appropriate launch menu.
-
-## Live Demo
-
-All available in the famous [Babylon.js website](https://www.babylonjs.com/demos/animatedgif/).
