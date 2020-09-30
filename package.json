@@ -1,0 +1,44 @@
+{
+    "name": "babylonjs-thinengine-instances-sample",
+    "version": "1.0.0",
+    "description": "Quick Demo of using the Babylon.js thin engine with instances.",
+    "author": {
+        "name": "Sebastien VANDENBERGHE"
+    },
+    "contributors": [
+        "Sebastien VANDENBERGHE"
+    ],
+    "keywords": [
+        "instances",
+        "acceleration",
+        "3D",
+        "2D",
+        "javascript",
+        "html5",
+        "webgl",
+        "webgl2",
+        "webgpu",
+        "babylon"
+    ],
+    "license": "MIT",
+    "readme": "README.md",
+    "typings": "dist/src/index.d.ts",
+    "main": "dist/src/index.js",
+    "files": [
+        "dist/src/**",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "webpack --env=prod",
+        "start": "npx webpack-dev-server -d --open",
+        "devServer": "npx webpack-dev-server -d"
+    },
+    "devDependencies": {
+        "@babylonjs/core": "^4.2.0-beta.4",
+        "ts-loader": "^8.0.4",
+        "typescript": "^4.0.3",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
