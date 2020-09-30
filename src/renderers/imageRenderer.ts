@@ -7,7 +7,6 @@ import { VertexBuffer } from "@babylonjs/core/Meshes/buffer";
 import { DataBuffer } from "@babylonjs/core/Meshes/dataBuffer";
 import { ImageShaderConfiguration } from "../shaders/imageShader";
 
-
 export class ImageRenderer {
     private readonly engine: ThinEngine;
     private readonly effectWrapper: EffectWrapper;
