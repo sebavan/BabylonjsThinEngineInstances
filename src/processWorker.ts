@@ -36,7 +36,7 @@ engine.stencilState.stencilTest = false;
 engine.setViewport({ x: 0, y: 0, width: 1, height: 1 });
 
 // Creates the texture first as it needs time to load.
-const image = new Texture(imageUrl, engine, false, false);
+const image = new Texture(imageUrl, engine);
 image.onLoadObservable.addOnce(() => {
     ctx.addEventListener("message", (event) => {
         const { data } = event;
