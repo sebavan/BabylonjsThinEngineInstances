@@ -9,7 +9,9 @@ var DEV_DIR = path.resolve(__dirname, "./.temp");
     return {
         context: __dirname,
         entry: {
-            index: SRC_DIR + "/app.ts"
+            index: SRC_DIR + "/app.ts",
+            indexWorker: SRC_DIR + "/appWorker.ts",
+            processWorker: SRC_DIR + "/processWorker.ts"
         },
         output: {
             path: (isProd ? DIST_DIR : DEV_DIR) + "/scripts/",

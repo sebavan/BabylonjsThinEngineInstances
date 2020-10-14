@@ -13,6 +13,22 @@ void main(void) {
 }
 `;
 
+const reverseVertexShader = `
+attribute vec2 position;
+
+varying vec2 vUV;
+varying vec2 vPos;
+
+const vec2 madd = vec2(0.5, 0.5);
+
+void main(void) {
+    vPos = position;
+    vUV = (position * madd + madd);
+    vUV = vec2(vUV.x, 1. - vUV.y);
+    gl_Position = vec4(position, 0.9, 1.0);
+}
+`;
+
 const fragmentShader = `
 varying vec2 vUV;
 varying vec2 vPos;
@@ -37,6 +53,7 @@ void main(void)
 export const ImageShaderConfiguration = {
     name: "Image",
     vertexShader,
+    reverseVertexShader,
     fragmentShader,
     samplerNames: ["imageSampler"],
     uniformNames: ["borderMixColor"],

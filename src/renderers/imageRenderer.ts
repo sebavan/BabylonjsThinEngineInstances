@@ -15,8 +15,12 @@ export class ImageRenderer {
     private readonly indexBuffer: DataBuffer;
     private readonly vertexBuffers: { [key: string]: VertexBuffer };
 
-    constructor(engine: ThinEngine) {
+    constructor(engine: ThinEngine, reverse: boolean = false) {
         this.engine = engine;
+        // Hack cause invertY looks like it is having an issue atm in offscreen.
+        if (reverse) {
+            ImageShaderConfiguration.vertexShader = ImageShaderConfiguration.reverseVertexShader;
+        }
         this.effectWrapper = new EffectWrapper({ engine, ...ImageShaderConfiguration });
 
         this.indexBuffer = engine.createIndexBuffer([0, 1, 2, 0, 2, 3], false);
