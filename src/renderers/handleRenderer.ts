@@ -4,7 +4,7 @@ import { EffectWrapper } from "@babylonjs/core/Materials/effectRenderer";
 import { IColor3Like } from "@babylonjs/core/Maths/math.like";
 import { Matrix } from "@babylonjs/core/Maths/math.vector";
 import { VertexBuffer, Buffer } from "@babylonjs/core/Meshes/buffer";
-import { DataBuffer } from "@babylonjs/core/Meshes/dataBuffer";
+import { DataBuffer } from "@babylonjs/core/Buffers/dataBuffer";
 import { HandleShaderConfiguration } from "../shaders/handleShader";
 
 export class HandleRenderer {

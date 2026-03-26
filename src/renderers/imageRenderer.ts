@@ -4,7 +4,7 @@ import { EffectWrapper } from "@babylonjs/core/Materials/effectRenderer";
 import { BaseTexture } from "@babylonjs/core/Materials/Textures/baseTexture";
 import { IColor3Like } from "@babylonjs/core/Maths/math.like";
 import { VertexBuffer } from "@babylonjs/core/Meshes/buffer";
-import { DataBuffer } from "@babylonjs/core/Meshes/dataBuffer";
+import { DataBuffer } from "@babylonjs/core/Buffers/dataBuffer";
 import { ImageShaderConfiguration } from "../shaders/imageShader";
 
 export class ImageRenderer {
